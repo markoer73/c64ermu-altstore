@@ -8,14 +8,14 @@
       "bundleIdentifier": "com.c64ermu.app",
       "developerName": "Marco Ermini",
       "version": "0.10.7",
-      "versionDate": "2026-09-08T22:53:02Z",
+      "versionDate": "2026-09-08T23:28:18Z",
       "versionDescription": "C64 emulator for iOS with Metal rendering, cycle-accurate timing, clean-room SID audio, F10 parity settings, and MFi controller support.",
-      "downloadURL": "https://github.com/markoer73/c64ermu-altstore/releases/latest/download/c64ermu.ipa",
+      "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
       "localizedDescription": "c64ermu is a high-accuracy Commodore 64 emulator for iOS and iPadOS. Features clean-room SID audio, 1541/1571/1581 drive emulation, Simons' BASIC extensions, CRT shaders, and Document Picker support.",
       "iconURL": "https://markoer73.github.io/c64ermu-altstore/icon.png",
       "tintColor": "6c5eb5",
-      "size": 22094562,
-      "sha256": "9134f05f9550c2fefa3cf3672b4ff27d165b85c03978e0fdb3ae35ee0e1fec6a",
+      "size": 21985849,
+      "sha256": "d8a2027a2bd3887c5b8d965aecaef98e900bf5783e3c8f29a5d5305f8fdc649b",
       "minOSVersion": "15.0",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/markoer73/c64ermu/main/docs/images/ios_screenshot1.png"
