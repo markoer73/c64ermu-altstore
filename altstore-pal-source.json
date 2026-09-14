@@ -8,14 +8,14 @@
       "bundleIdentifier": "com.c64ermu.app",
       "developerName": "Marco Ermini",
       "version": "0.10.7",
-      "versionDate": "2026-09-14T09:28:05Z",
+      "versionDate": "2026-09-14T09:40:35Z",
       "versionDescription": "EU DMA Alternative Distribution release. Native Metal rendering, cycle-accurate timing, and F10 parity settings.",
       "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
       "localizedDescription": "c64ermu is a high-accuracy Commodore 64 emulator for iOS and iPadOS. Fully compliant with EU DMA alternative distribution.",
       "iconURL": "https://markoer73.github.io/c64ermu-altstore/icon.png",
       "tintColor": "6c5eb5",
       "size": 21985852,
-      "sha256": "1cb0a9702fae94a59604b01f891ebf7f4207ab330deec48b56ea7fa91c100b9b",
+      "sha256": "45ff88bd359ce634396d556767faaddc4e46d8892b0905f205256bd491e7eb6f",
       "minOSVersion": "17.4",
       "marketplaceID": "com.altstore.marketplace"
     }

@@ -146,6 +146,19 @@
       box-shadow: 0 8px 26px rgba(121, 82, 179, 0.6);
     }
 
+    .btn-altstore-pal {
+      background: linear-gradient(135deg, #0da993 0%, #066456 100%);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 6px 20px rgba(13, 169, 147, 0.45);
+    }
+
+    .btn-altstore-pal:hover {
+      background: linear-gradient(135deg, #10c5ab 0%, #087767 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 26px rgba(13, 169, 147, 0.6);
+    }
+
     .btn-ipa {
       background: rgba(255, 255, 255, 0.08);
       color: #ffffff;
@@ -310,12 +323,20 @@
 
     <!-- Download & Install CTAs -->
     <div class="button-group">
-      <!-- Direct deep-link: opens AltStore app directly -->
+      <!-- Direct deep-link: opens AltStore Classic app -->
       <a href="altstore://source?url=https://markoer73.github.io/c64ermu-altstore/source.json" class="btn btn-altstore">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.54c.64-.78 1.08-1.86.96-2.94-1 .04-2.16.66-2.84 1.45-.6.69-1.12 1.8-0.98 2.87 1.11.09 2.22-.6 2.86-1.38z"/>
         </svg>
-        Add to AltStore
+        Add to AltStore Classic
+      </a>
+
+      <!-- Direct deep-link: opens AltStore PAL app (EU DMA) -->
+      <a href="altstore-pal://source?url=https://markoer73.github.io/c64ermu-altstore/altstore-pal-source.json" class="btn btn-altstore-pal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L2 12l10 10 10-10L12 2zm0 3.54L18.46 12 12 18.46 5.54 12 12 5.54z"/>
+        </svg>
+        Add to AltStore PAL (EU)
       </a>
 
       <!-- Direct IPA download served from GitHub Pages repo -->
@@ -323,12 +344,15 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
         </svg>
-        Download IPA (Direct)
+        Download IPA
       </a>
 
-      <!-- Direct Feed Link -->
+      <!-- Direct Feed Links -->
       <a href="source.json" class="btn btn-source">
-        View source.json
+        source.json
+      </a>
+      <a href="altstore-pal-source.json" class="btn btn-source">
+        altstore-pal-source.json
       </a>
     </div>
 
@@ -364,22 +388,26 @@
     <!-- Installation Guide -->
     <h2 class="section-title">📱 How to Install via AltStore</h2>
     <div class="guide-box">
-      <h3>AltStore Classic (Global Sideloading)</h3>
+      <h3>AltStore Classic (Global Sideloading via AltServer)</h3>
       <ol>
-        <li>Make sure you have <strong>AltStore</strong> installed on your iPhone or iPad via <a href="https://altstore.io" target="_blank" style="color:var(--c64-cyan);">AltServer</a>.</li>
-        <li>Tap the <strong>Add to AltStore</strong> button above on your iOS device, or add the source URL manually in AltStore:
+        <li>Make sure you have <strong>AltStore Classic</strong> installed on your iPhone or iPad via <a href="https://altstore.io" target="_blank" style="color:var(--c64-cyan);">AltServer</a>.</li>
+        <li>Tap <strong>Add to AltStore Classic</strong> above, or add the source URL manually in AltStore:
           <div class="code-box">
             <span id="sourceUrl">https://markoer73.github.io/c64ermu-altstore/source.json</span>
           </div>
         </li>
-        <li>In AltStore, go to the <strong>Sources</strong> tab, locate <strong>c64ermu</strong>, and tap <strong>FREE / Install</strong>.</li>
+        <li>In AltStore, go to the <strong>Sources</strong> tab, locate <strong>Commodore 64™ eRmulator</strong>, and tap <strong>FREE / Install</strong>.</li>
       </ol>
 
-      <h3 style="margin-top:20px;">AltStore PAL (European Union)</h3>
+      <h3 style="margin-top:24px;">AltStore PAL (European Union &bull; iOS 17.4+)</h3>
       <ol>
-        <li>Requires an iPhone running <strong>iOS 17.4+</strong> physically located in the EU.</li>
-        <li>Install AltStore PAL from <a href="https://altstore.io" target="_blank" style="color:var(--c64-cyan);">altstore.io</a>.</li>
-        <li>Add the source feed or install the notarized package directly.</li>
+        <li>Open <strong>AltStore PAL</strong> on your device (EU DMA marketplace version).</li>
+        <li>Tap <strong>Add to AltStore PAL (EU)</strong> above, or add the PAL-specific source URL manually:
+          <div class="code-box">
+            <span>https://markoer73.github.io/c64ermu-altstore/altstore-pal-source.json</span>
+          </div>
+        </li>
+        <li><strong>Note:</strong> AltStore PAL requires packages notarized by Apple for Alternative Marketplace distribution. If you see an error stating <em>"missing a marketplaceID"</em>, you added <code>source.json</code> instead of <code>altstore-pal-source.json</code>.</li>
       </ol>
     </div>
 
