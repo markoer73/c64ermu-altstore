@@ -386,30 +386,45 @@
     </div>
 
     <!-- Installation Guide -->
-    <h2 class="section-title">📱 How to Install via AltStore</h2>
+    <h2 class="section-title">📱 How to Install</h2>
     <div class="guide-box">
-      <h3>AltStore Classic (Global Sideloading via AltServer)</h3>
+      <h3>AltStore Classic &bull; SideStore &bull; Direct Sideloading (Recommended)</h3>
       <ol>
-        <li>Make sure you have <strong>AltStore Classic</strong> installed on your iPhone or iPad via <a href="https://altstore.io" target="_blank" style="color:var(--c64-cyan);">AltServer</a>.</li>
-        <li>Tap <strong>Add to AltStore Classic</strong> above, or add the source URL manually in AltStore:
-          <div class="code-box">
-            <span id="sourceUrl">https://markoer73.github.io/c64ermu-altstore/source.json</span>
-          </div>
+        <li><strong>Direct IPA Sideload (Easiest & Most Reliable):</strong>
+          <p style="margin: 6px 0 10px 0; color: #cbd5e1;">Tap the <strong>Download IPA</strong> button above. Open <strong>AltStore Classic</strong>, go to <strong>My Apps</strong>, tap the <strong>+</strong> icon, and select <code>c64ermu.ipa</code>.</p>
         </li>
-        <li>In AltStore, go to the <strong>Sources</strong> tab, locate <strong>Commodore 64™ eRmulator</strong>, and tap <strong>FREE / Install</strong>.</li>
+        <li><strong>Add as a Source in AltStore Classic:</strong>
+          <div class="code-box">
+            <span id="sourceClassicUrl">https://markoer73.github.io/c64ermu-altstore/source.json</span>
+            <button class="btn btn-ipa" style="padding: 6px 14px; font-size: 0.85rem;" onclick="copyToClipboard('sourceClassicUrl', this)">Copy URL</button>
+          </div>
+          <p style="margin: 6px 0 10px 0; color: #cbd5e1;">Open AltStore Classic, go to the <strong>Sources</strong> tab, tap <strong>+</strong>, paste the URL, and install.</p>
+        </li>
+        <li style="color: #fca5a5;">
+          <strong>⚠️ Note for EU users with AltStore PAL installed:</strong>
+          <p style="margin-top: 4px; color: #fca5a5;">Because AltStore PAL registers the <code>altstore://</code> URL scheme on your iPhone, tapping "Add to AltStore Classic" opens AltStore PAL instead. AltStore PAL will display an error: <em>"missing a marketplaceID"</em>. To avoid this, <strong>do not tap the deep-link</strong>; instead, tap <strong>Copy URL</strong> above and paste it into AltStore Classic, or use <strong>Download IPA</strong>.</p>
+        </li>
       </ol>
 
-      <h3 style="margin-top:24px;">AltStore PAL (European Union &bull; iOS 17.4+)</h3>
+      <h3 style="margin-top:28px;">AltStore PAL (European Union &bull; Apple DMA Marketplace)</h3>
       <ol>
-        <li>Open <strong>AltStore PAL</strong> on your device (EU DMA marketplace version).</li>
-        <li>Tap <strong>Add to AltStore PAL (EU)</strong> above, or add the PAL-specific source URL manually:
-          <div class="code-box">
-            <span>https://markoer73.github.io/c64ermu-altstore/altstore-pal-source.json</span>
-          </div>
-        </li>
-        <li><strong>Note:</strong> AltStore PAL requires packages notarized by Apple for Alternative Marketplace distribution. If you see an error stating <em>"missing a marketplaceID"</em>, you added <code>source.json</code> instead of <code>altstore-pal-source.json</code>.</li>
+        <li>AltStore PAL is an Apple-sanctioned Alternative Marketplace under the EU Digital Markets Act.</li>
+        <li>Under Apple's strict DMA rules, AltStore PAL <strong>cannot install regular sideloaded IPAs</strong>. Every app in AltStore PAL must be submitted to Apple for Notarization as an Alternative Distribution Package (ADP) and assigned a numeric <strong>marketplaceID</strong> (Apple Item ID).</li>
+        <li>Community emulators without Apple DMA notarization cannot be installed directly via AltStore PAL.</li>
+        <li><strong>How to use in the EU:</strong> You can install <strong>AltStore Classic</strong> directly from inside the AltStore PAL marketplace for free, and then use AltStore Classic to sideload <code>c64ermu.ipa</code>!</li>
       </ol>
     </div>
+
+    <script>
+      function copyToClipboard(elementId, btn) {
+        const text = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          const originalText = btn.innerText;
+          btn.innerText = 'Copied!';
+          setTimeout(() => { btn.innerText = originalText; }, 2000);
+        });
+      }
+    </script>
 
     <!-- Footer -->
     <footer>
