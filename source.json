@@ -17,16 +17,16 @@
       "tintColor": "#6c5eb5",
       "category": "entertainment",
       "version": "0.10.7",
-      "versionDate": "2026-09-18T22:47:14Z",
+      "versionDate": "2026-09-19T05:30:44Z",
       "versionDescription": "C64 emulator for iOS with Metal rendering, cycle-accurate timing, clean-room SID audio, F10 parity settings, and MFi controller support.",
       "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
       "size": 21987978,
-      "sha256": "514d8c244b41ce7bb1b62023e185d78e7302f5ba6002b7ea39d4562a68907b52",
+      "sha256": "ed13d08cc3434d4febc164f6d5f2ccb875942ca7f04714e0f9fe1b8271c2e7da",
       "minOSVersion": "15.0",
       "versions": [
         {
           "version": "0.10.7",
-          "date": "2026-09-18",
+          "date": "2026-09-19",
           "localizedDescription": "C64 emulator for iOS with Metal rendering, cycle-accurate timing, clean-room SID audio, F10 parity settings, and MFi controller support.",
           "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
           "size": 21987978,
@@ -44,7 +44,7 @@
       "title": "c64ermu 0.10.7 Released",
       "identifier": "c64ermu-0.10.7",
       "caption": "Enjoy Commodore 64 games and demos natively on iOS.",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "appID": "com.c64ermu.app"
     }
   ]
