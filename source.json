@@ -17,11 +17,11 @@
       "tintColor": "#6c5eb5",
       "category": "entertainment",
       "version": "0.10.7",
-      "versionDate": "2026-09-19T05:30:44Z",
+      "versionDate": "2026-09-19T08:17:56Z",
       "versionDescription": "C64 emulator for iOS with Metal rendering, cycle-accurate timing, clean-room SID audio, F10 parity settings, and MFi controller support.",
       "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
       "size": 21987978,
-      "sha256": "ed13d08cc3434d4febc164f6d5f2ccb875942ca7f04714e0f9fe1b8271c2e7da",
+      "sha256": "37e48e277df276cfd6764f834a07aea9ec429135690051cf3bfd4553a73f5934",
       "minOSVersion": "15.0",
       "versions": [
         {
