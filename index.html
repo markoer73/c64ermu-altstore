@@ -321,37 +321,48 @@
       </div>
     </header>
 
+    <!-- Closed Beta Notice -->
+    <div style="background: rgba(108, 94, 181, 0.2); border: 1px solid rgba(108, 94, 181, 0.4); border-radius: 12px; padding: 18px 24px; margin-bottom: 24px; text-align: center;">
+      <h2 style="font-size: 1.25rem; font-weight: 700; color: #a5b4fc; margin-bottom: 8px;">🔒 Closed Beta Program Required</h2>
+      <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 14px auto;">
+        c64ermu is currently in private beta. Direct IPA downloads and AltStore Classic feeds require an authorized beta access token. Please register your device at c64.team to receive your access token.
+      </p>
+      <a href="https://c64.team/team.html#register" class="btn btn-altstore" style="display: inline-block;">
+        🚀 Register for Closed Beta at c64.team
+      </a>
+    </div>
+
     <!-- Download & Install CTAs -->
     <div class="button-group">
       <!-- Direct deep-link: opens AltStore Classic app -->
-      <a href="altstore://source?url=https://markoer73.github.io/c64ermu-altstore/source.json" class="btn btn-altstore">
+      <a href="https://c64.team/team.html" class="btn btn-altstore">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.54c.64-.78 1.08-1.86.96-2.94-1 .04-2.16.66-2.84 1.45-.6.69-1.12 1.8-0.98 2.87 1.11.09 2.22-.6 2.86-1.38z"/>
         </svg>
-        Add to AltStore Classic
+        Add to AltStore Classic (Beta Token)
       </a>
 
       <!-- Direct deep-link: opens AltStore PAL app (EU DMA) -->
-      <a href="altstore-pal://source?url=https://markoer73.github.io/c64ermu-altstore/altstore-pal-source.json" class="btn btn-altstore-pal">
+      <a href="altstore-pal://source?url=https://c64ermu.com/altstore/altstore-pal-source.json" class="btn btn-altstore-pal">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2L2 12l10 10 10-10L12 2zm0 3.54L18.46 12 12 18.46 5.54 12 12 5.54z"/>
         </svg>
         Add to AltStore PAL (EU)
       </a>
 
-      <!-- Direct IPA download served from GitHub Pages repo -->
-      <a href="c64ermu.ipa" class="btn btn-ipa" download="c64ermu.ipa">
+      <!-- Direct IPA download served via c64.team token gate -->
+      <a href="https://c64.team/sideload.html" class="btn btn-ipa">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
         </svg>
-        Download IPA
+        Download IPA (Beta)
       </a>
 
       <!-- Direct Feed Links -->
-      <a href="source.json" class="btn btn-source">
-        source.json
+      <a href="https://c64.team/sideload.html#altstore-classic" class="btn btn-source">
+        source.json (Token Required)
       </a>
-      <a href="altstore-pal-source.json" class="btn btn-source">
+      <a href="https://c64ermu.com/altstore/altstore-pal-source.json" class="btn btn-source">
         altstore-pal-source.json
       </a>
     </div>
@@ -394,11 +405,12 @@
           <p style="margin: 6px 0 10px 0; color: #cbd5e1;">Tap the <strong>Download IPA</strong> button above. Open <strong>AltStore Classic</strong>, go to <strong>My Apps</strong>, tap the <strong>+</strong> icon, and select <code>c64ermu.ipa</code>.</p>
         </li>
         <li><strong>Add as a Source in AltStore Classic:</strong>
+          <p style="margin: 6px 0 6px 0; color: #cbd5e1;">The AltStore Classic source feed is token-gated. Once registered at <a href="https://c64.team/team.html#register" style="color: #a5b4fc; text-decoration: underline;">c64.team</a>, copy your personalized source URL from your portal or use your access token:</p>
           <div class="code-box">
-            <span id="sourceClassicUrl">https://markoer73.github.io/c64ermu-altstore/source.json</span>
+            <span id="sourceClassicUrl">https://c64ermu.com/altstore/source.json?token=YOUR_BETA_TOKEN</span>
             <button class="btn btn-ipa" style="padding: 6px 14px; font-size: 0.85rem;" onclick="copyToClipboard('sourceClassicUrl', this)">Copy URL</button>
           </div>
-          <p style="margin: 6px 0 10px 0; color: #cbd5e1;">Open AltStore Classic, go to the <strong>Sources</strong> tab, tap <strong>+</strong>, paste the URL, and install.</p>
+          <p style="margin: 6px 0 10px 0; color: #cbd5e1;">Open AltStore Classic, go to the <strong>Sources</strong> tab, tap <strong>+</strong>, paste your tokenized source URL, and install.</p>
         </li>
         <li style="color: #fca5a5;">
           <strong>⚠️ Note for EU users with AltStore PAL installed:</strong>

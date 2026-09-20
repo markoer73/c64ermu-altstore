@@ -2,28 +2,26 @@
 
 Official AltStore distribution source for **Commodore 64™ eRmulator (c64ermu)** on iOS and iPadOS.
 
-[![Add to AltStore](https://img.shields.io/badge/AltStore-Add%20Source-5856D6?logo=apple&logoColor=white)](altstore://source?url=https://markoer73.github.io/c64ermu-altstore/source.json)
-[![Direct IPA Download](https://img.shields.io/badge/Direct-Download%20IPA-333333?logo=apple&logoColor=white)](https://github.com/markoer73/c64ermu-altstore/releases/latest/download/c64ermu.ipa)
+[![Join Beta](https://img.shields.io/badge/Closed%20Beta-Register%20at%20c64.team-6c5eb5?logo=apple&logoColor=white)](https://c64.team/team.html#register)
+[![Sideload Guide](https://img.shields.io/badge/Sideload-Guide%20%26%20Tokens-333333?logo=apple&logoColor=white)](https://c64.team/sideload.html)
+
+> [!IMPORTANT]
+> **Beta Token Required**: Commodore 64™ eRmulator is currently in closed beta. Direct IPA downloads and AltStore Classic source feeds are token-gated. Please register your Apple device at **[c64.team](https://c64.team/team.html#register)** to receive your personalized authorization token.
 
 ## 🌐 Web Landing Page
-Visit the official AltStore landing page:  
-👉 **[https://markoer73.github.io/c64ermu-altstore/](https://markoer73.github.io/c64ermu-altstore/)**
+Visit the official AltStore & Closed Beta landing pages:  
+👉 **[https://c64.team/](https://c64.team/)** | **[https://c64ermu.com/altstore](https://c64ermu.com/altstore)**
 
 ---
 
-## 📲 How to Add to AltStore
+## 📲 How to Add to AltStore Classic
 
-### Option 1: One-Click Add (iOS / iPadOS)
-Tap this link on your device:  
-👉 **[altstore://source?url=https://markoer73.github.io/c64ermu-altstore/source.json](altstore://source?url=https://markoer73.github.io/c64ermu-altstore/source.json)**
-
-### Option 2: Add Manually
-1. Open the **AltStore** app on your iPhone or iPad.
-2. Go to the **Sources** tab.
-3. Tap the **+** icon in the top right corner.
-4. Enter the source URL:
+1. Register your device at **[c64.team/team.html#register](https://c64.team/team.html#register)** to receive your beta access token.
+2. Open the **AltStore** app on your iPhone or iPad.
+3. Go to the **Sources** tab and tap the **+** icon in the top right corner.
+4. Enter your personalized, tokenized source URL (available from your `c64.team` portal dashboard):
    ```text
-   https://markoer73.github.io/c64ermu-altstore/source.json
+   https://c64ermu.com/altstore/source.json?token=YOUR_BETA_TOKEN
    ```
 5. Tap **Add**. Once the source appears, tap **c64ermu** and install.
 

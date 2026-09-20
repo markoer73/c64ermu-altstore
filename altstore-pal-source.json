@@ -19,7 +19,7 @@
       "version": "0.10.7",
       "versionDate": "2026-09-19T08:19:34Z",
       "versionDescription": "EU DMA Alternative Distribution release. Native Metal rendering, cycle-accurate timing, and F10 parity settings.",
-      "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
+      "downloadURL": "https://c64ermu.com/api/testers/download/ios",
       "size": 21987978,
       "sha256": "bb30d6fe864d2eb0c6c4d58e67c45e1750d9bd21416805ffe1735926dedae523",
       "minOSVersion": "17.4",
@@ -28,7 +28,7 @@
           "version": "0.10.7",
           "date": "2026-09-19",
           "localizedDescription": "EU DMA Alternative Distribution release. Native Metal rendering, cycle-accurate timing, and F10 parity settings.",
-          "downloadURL": "https://markoer73.github.io/c64ermu-altstore/c64ermu.ipa",
+          "downloadURL": "https://c64ermu.com/api/testers/download/ios",
           "size": 21987978,
           "minOSVersion": "17.4"
         }
